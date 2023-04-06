@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="mercadopago, mastercard, visa, paypal, pago, comprar, buenos aires, promociones, delivery, comprar en linea, tarjeta de crédito," >
+    <meta name="description" content="Disfrutá de todos nuestros sabores. Pedí desde tu celular y recibí los productos en la puerta de tu casa o visitanos en nuestros locales mas cercanos.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>TOMACCO - Tus pizzas favoritas a domicilio</title>
+</head>
+<body>
+    <header>
+        <!-- BOOTSTRAP NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <div class="logo-container">
+                    <a href="../index.html"><img class="navbar-logo" src="../img/logo-new.png" alt="logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./combos.html">Combos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pagos.html">Pagos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../index.html#pizza">Pizzas</a></li>
+                                <li><a class="dropdown-item" href="../index.html#empanada">Empanadas</a></li>
+                                <li><a class="dropdown-item" href="../index.html#complemento">Complementos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <!-- Button trigger modal -->
+                <button id="cartButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myCart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="carritoCount" id="carritoCount"></span>
+                </button>
+                <!-- Modal 1 -->
+                <div class="modal fade" id="myCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel">
+                            Carrito de compras
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="modalBody" class="modal-body"></div>
+                        <div id="modalFooter" class="modal-footer">
+                        <div class="totalContainer" id="totalContainer"></div>
+                        <button class="checkoutButton" data-bs-toggle="modal" data-bs-target="#myCart2" data-bs-dismiss="modal">Finalizar pedido</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- fin modal 1 -->
+                <!-- Modal 2 -->
+                <div class="modal fade modal2" id="myCart2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true" data-bs-backdrop="static">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title" id="exampleModalLabel2">
+                            Finalizar pedido
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="modalBody2" class="modal-body2">
+                        <form action="">
+                            <section>
+                                <input class="name" type="text" placeholder="Nombre">
+                                <input class="adress" type="text" placeholder="Direccion">
+                                <input class="number" type="number" placeholder="Numero de celular" name="" id="">
+                                <textarea name="" id="" cols="30" rows="8" placeholder="Informacion adicional"></textarea>
+                            </section>
+                        </form>
+                        </div>
+                        <div id="modalFooter2" class="modal-footer2">
+                        <a id="regreso" class="return-btn" href="#myCart" data-bs-toggle="modal" data-bs-dismiss="modal">Volver</a>
+                        <button id="payButton" class="pay-button">Pagar ahora</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- fin modal 2 -->
+            </div>
+        </nav>
+    </header>
+    <main class="main-pagos">
+        <div class="titulo-pagos">
+            <h1 class="animate__animated animate__fadeIn">FORMAS DE PAGO</h1>
+        </div>
+        <div class="linea"></div>
+        <section class="pagos-container-dos">
+            <div class="moto-container">
+                <img src="../img/moto.png" alt="moto">
+                <h2>Servicio de Delivery Gratis Contra entrega</h2>
+                <h3>Abonas tu compra al momento de recibirla.</h3>
+                <h4>Para conocer las zonas de envio utilice el siguiente mapa.</h4>
+            </div>
+            <div class="mapas">
+                <h2>Ver Mapa</h2>
+                <a href="../pages/sucursales.html"><img src="../img/mapas.png" alt="mapa"></a>
+            </div>
+        </section>
+        <div class="linea"></div>
+        <section class="pagos-container-tres">
+            <div class="metodopago-uno">
+                <img src="../img/mercadopago.png" alt="mercadopago">
+                <h2>Realizá tu pago con tarjetas de Crédito y Cupones<br>de Pago Facil, Rapipago, Redlink, Bapro Pagos.</h2>
+            </div>
+            <div class="vertical"></div>
+            <div class="metodopago-dos">
+                <img src="../img/paypal.png" alt="paypal">
+                <h2>Realizá tu pago con tu cuenta Paypal.</h2>
+            </div>
+            <div class="vertical"></div>
+            <div class="metodopago-tres">
+                <img src="../img/tarjetas.png" alt="visa y mastercard">
+                <h2>Realizá tu pago con tarjeta de crédito y débito.</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-grid">
+            <div class="foot-logo">
+                <a href="../index.html"><img src="../img/logo-new.png" alt="logo"></a>
+            </div>
+            <div class="foot-horario">
+                <p>Horario de atención <br> Lunes Cerrado. <br> Martes a Jueves de 11 a 15hs. y de 18 a 23hs. <br>
+                    Viernes y Sábados de 11 a 15hs. y de 18 a 24hs. <br> Domingo de 11 a 15hs. y de 18 a 24hs.</p>
+            </div>
+            <div class="foot-derechos">
+                <p>© 2023 Tomacco by Miguel Torres. Todos los derechos reservados</p>
+            </div>
+            <div class="foot-redes">
+                <p>SEGUINOS EN</p>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook icon"></i>
+                    <div class="tooltip-icon">facebook</div>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram icon"></i>
+                    <div class="tooltip-icon">instagram</div>
+                </a>
+                <a href="https://www.linkedin.com/in/miguel-torres-arias-2b239a129/">
+                    <i class="fa-brands fa-linkedin icon"></i>
+                    <div class="tooltip-icon">linkedin</div>
+                </a>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

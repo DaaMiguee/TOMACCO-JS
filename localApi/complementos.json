@@ -1,0 +1,6 @@
+[
+    {"id": 9, "name": "Papas Rusticas", "price": 700, "desc": "Nuestras papas son tiernas por dentro y crocantes por fuera. Elaboradas con papa seleccionada. ¡te van a encantar!", "img": "../img/papasrusticas.png", "cantidad": 1},
+    {"id": 10, "name": "Nuggets de Pollo", "price": 1000, "desc": "Elaborados con 100% carne de pechuga de pollo y un rebozador super crocante, pedilas fritas o al horno.", "img": "../img/nuggetpollo.png", "cantidad": 1},
+    {"id": 11, "name": "Rolls de Pollo Relleno con Jamón y Queso", "price": 600, "desc": "Elaborado con 100% pechuga de pollo, relleno con cubos del mejor jamón cocido y queso mozzarella.", "img": "../img/complemento-3.png", "cantidad": 1},
+    {"id": 12, "name": "Aros de Cebolla", "price": 500, "desc": "Rellenos de cebolla picada y pequeños trozos, cubiertos del mejor rebozador. ¡Una bomba de sabor!", "img": "../img/aroscebolla.png", "cantidad": 1}
+]

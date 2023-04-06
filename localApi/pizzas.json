@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Pepperoni", "price": 1300, "desc": "Harina italiana, Mozzarella, salsa de tomate entera, pepperoni italiano real, pimiento picante, alcaparras, orégano", "img": "../img/pepperoni.png", "cantidad": 1},
+    {"id": 2, "name": "Pollo y Champiñones", "price": 1400, "desc": "Harina italiana, salsa a base de parmesano y crema, mozzarella, Dormula, pollo al horno, champiñones, pimientos, orégano", "img": "../img/polloychampinones.png", "cantidad": 1},
+    {"id": 3, "name": "Carne Múltiple", "price": 1400, "desc": "Salsa de tomate, mozzarella, carne de res, pepperoni, salchichas, pimientos, cebollas de Crimea, salsa de barbacoa, orégano", "img": "../img/carnemultiple.png", "cantidad": 1},
+    {"id": 4, "name": "Salami", "price": 1200, "desc": "Harina italiana, mozzarella, salsa de tomates enteros, salami premium, orégano", "img": "../img/salami.png", "cantidad": 1}
+]

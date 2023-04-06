@@ -1,0 +1,30 @@
+//!VARIABLES
+$color-principal:#111111;
+$color-secundario:#fafafa;
+$color-terciario:#00795b;
+$color-cuaternario: #ffffff;
+// $tooltip-bg-color: #626262;
+
+//!listas
+$color:
+#000000,
+#626262,
+#5f5f5f,
+#ffffff,
+;
+
+//!MAPAS
+$button:(
+bc:#ffffff00,
+color-text:#626262,
+padd:5px,
+deco:none,
+border-r:25px
+);
+
+//!MIXINS
+@mixin flextwo ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}

@@ -1,0 +1,6 @@
+[
+    {"id": 5, "name": "Empanada de Pollo", "price": 230, "desc": "100% pechuga de pollo desmenuzada. Con una suave y crocante masa estilo criolla, fritas o al horno.", "img": "../img/e-pollo.png", "cantidad": 1},
+    {"id": 6, "name": "Empanada de Carne", "price": 230, "desc": "Con una selección de carnes magras y semimagras con cebolla, morrón y verdeo, fritas o al horno.", "img": "../img/e-carne.png", "cantidad": 1},
+    {"id": 7, "name": "Jamón y Queso", "price": 230, "desc": "Primerísima calidad de jamón cocido y queso mozzarella, dentro de una suave y crocante masa estilo criolla.", "img": "../img/e-jamonyqueso.png", "cantidad": 1},
+    {"id": 8, "name": "Espinaca y Queso", "price": 230, "desc": "Cansado de comer carne, esta es una buena opción. Empanadas cremosas rellenas con espinaca y queso.", "img": "../img/e-espicanayqueso.png", "cantidad": 1}
+]

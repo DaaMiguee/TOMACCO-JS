@@ -1,0 +1,1501 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,200;1,500&display=swap");
+/*------RESET------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*-----HEADER-----*/
+header .navbar {
+  background-color: #111111; }
+  header .navbar .container-fluid .logo-container {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header .navbar .container-fluid .logo-container a .navbar-logo {
+      width: 100px; }
+  header .navbar .container-fluid .navbar-toggler {
+    color: #00795b;
+    margin: 13px 0 13px 0; }
+    header .navbar .container-fluid .navbar-toggler .fa-bars {
+      color: #ffffff;
+      width: 20px; }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    margin: 10px 0 10px 0;
+    transition: all 200ms ease; }
+    header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
+      color: #5f5f5f; }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item .dropdown-menu {
+    background-color: #111111;
+    border: solid #ffffff50 2px; }
+    header .navbar .container-fluid .collapse .navbar-nav .nav-item .dropdown-menu li .dropdown-item {
+      color: #ffffff; }
+      header .navbar .container-fluid .collapse .navbar-nav .nav-item .dropdown-menu li .dropdown-item:hover {
+        background-color: #fafafa;
+        color: #000000; }
+  header .navbar .container-fluid .collapse .d-flex .form-control {
+    border: solid 1.5px #00795b; }
+    header .navbar .container-fluid .collapse .d-flex .form-control:focus {
+      box-shadow: none; }
+  header .navbar .container-fluid .collapse .d-flex .btn {
+    color: #ffffff;
+    border: solid 1.5px #00795b; }
+    header .navbar .container-fluid .collapse .d-flex .btn:hover {
+      background-color: #00795b; }
+  header .navbar .container-fluid .btn-primary {
+    background-color: #111111;
+    outline: solid 1.5px #00795b;
+    margin-left: 10px;
+    border: none;
+    position: relative;
+    transition: all 0.3s; }
+    header .navbar .container-fluid .btn-primary:hover {
+      background-color: #00795b; }
+    header .navbar .container-fluid .btn-primary .fa-cart-shopping {
+      font-size: 1rem;
+      transform: scaleX(-1); }
+    header .navbar .container-fluid .btn-primary .carritoCount {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      color: #ffffff;
+      background: #ff0000;
+      font-size: 0.9rem;
+      font-weight: 600;
+      position: absolute;
+      height: 14px;
+      width: 14px;
+      bottom: 0;
+      right: 0; }
+  header .navbar .container-fluid .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1055;
+    backdrop-filter: blur(5px); }
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-header .modal-title {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: #626262;
+      margin: 10px; }
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #fafafa; }
+      header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd {
+        background-color: #ffffff;
+        border: solid 1px #59595921;
+        display: inline-block;
+        height: 150px;
+        width: 100%;
+        margin-bottom: 5px;
+        border-radius: 15px;
+        position: relative; }
+        header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd img {
+          object-fit: contain;
+          height: 100px;
+          display: inline-block;
+          position: absolute;
+          left: 3%;
+          top: 50%;
+          transform: translateY(-50%); }
+        header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div {
+          height: 140px;
+          width: 100%;
+          position: relative; }
+          header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div::selection {
+            text-shadow: none; }
+          header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div h3 {
+            position: absolute;
+            top: 25%;
+            left: 26%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #5f5f5f;
+            font-family: sans-serif; }
+            header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div h3::selection {
+              text-shadow: #0dcaf0; }
+          header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .minus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6262622a;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            text-shadow: none;
+            position: absolute;
+            right: 24.5%;
+            bottom: 20%; }
+            header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .minus::selection {
+              text-shadow: none; }
+            header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .minus .fa-minus {
+              color: #626262;
+              font-size: 1.1rem; }
+          header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .amount {
+            font-family: sans-serif;
+            font-size: 1rem;
+            color: #000000;
+            position: absolute;
+            right: 15.5%;
+            bottom: 8.5%; }
+            header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .amount::selection {
+              text-shadow: none; }
+          header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .plus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #6262622a;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            text-shadow: none;
+            position: absolute;
+            right: 3%;
+            bottom: 20%; }
+            header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .plus::selection {
+              text-shadow: none; }
+            header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .plus .fa-plus {
+              color: #626262;
+              font-size: 1.1rem; }
+        header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd .count {
+          border: solid 1px rgba(45, 45, 45, 0.123);
+          margin: 5px; }
+        header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd b {
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          font-size: 0.9rem;
+          color: #5f5f5f;
+          position: absolute;
+          bottom: 25%;
+          left: 26%; }
+          header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd b::selection {
+            text-shadow: none; }
+        header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd button {
+          background-color: #ffffff00;
+          border: none;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 30px;
+          height: 30px; }
+          header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd button .fa-trash {
+            color: #626262;
+            font-size: 1rem;
+            transition-duration: 0.3s; }
+            header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd button .fa-trash:hover {
+              color: #ce3a3a; }
+              header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd button .fa-trash:hover + .modalTooltip {
+                opacity: 1; }
+          header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd button .modalTooltip {
+            padding-top: 4px;
+            text-align: center;
+            position: absolute;
+            font-size: 0.7rem;
+            top: -74%;
+            right: -32%;
+            height: 25px;
+            width: 50px;
+            background-color: #626262;
+            color: #ffffff;
+            border-radius: 5px;
+            opacity: 0;
+            transition: 0.5s; }
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-footer {
+      display: flex;
+      justify-content: space-between; }
+      header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-footer .totalContainer {
+        color: #000000;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-left: 10px; }
+      header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-footer button {
+        border: 1.5px solid #00795b;
+        padding: 5px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 5px;
+        background-color: #fafafa;
+        color: #000000;
+        margin-right: 10px;
+        margin-left: 10px;
+        transition: all 0.3s; }
+        header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-footer button:hover {
+          background-color: #00795b;
+          color: #ffffff; }
+  header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 {
+    background-color: #ffffff; }
+    header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section input {
+        font-family: sans-serif;
+        outline: 0;
+        background-color: #fafafa;
+        border: 0;
+        margin: 10px;
+        padding: 15px;
+        font-size: 0.9rem;
+        border-radius: 10px;
+        width: 60%; }
+        header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section input:focus {
+          outline: solid 2px #00795b; }
+      header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section textarea {
+        width: 60%;
+        background-color: #fafafa;
+        border: 0;
+        padding: 10px;
+        font-size: 0.9rem;
+        resize: none;
+        border-radius: 10px;
+        margin: 10px; }
+        header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section textarea:focus {
+          outline: solid 2px #00795b; }
+  header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-footer2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-footer2 .return-btn {
+      text-decoration: none;
+      border: 1.5px solid #00795b;
+      padding: 5px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 5px;
+      background-color: #fafafa;
+      color: #000000;
+      margin-left: 20px;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      transition: all 0.3s; }
+      header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-footer2 .return-btn:hover {
+        background-color: #00795b;
+        color: #ffffff; }
+    header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-footer2 .pay-button {
+      border: 1.5px solid #00795b;
+      padding: 5px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 5px;
+      background-color: #fafafa;
+      color: #000000;
+      margin-right: 20px;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      transition: all 0.3s; }
+      header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-footer2 .pay-button:hover {
+        background-color: #00795b;
+        color: #ffffff; }
+
+/*-----MAIN INDEX-----*/
+.index-main {
+  background-color: #fafafa; }
+  .index-main .a-container {
+    background-color: #111111; }
+    .index-main .a-container .index-anuncio-container {
+      height: 58px;
+      width: 100%;
+      display: flex; }
+      .index-main .a-container .index-anuncio-container img {
+        height: 58px;
+        width: 100%;
+        object-fit: contain; }
+  .index-main h1 {
+    color: #626262;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    background-color: #62626227; }
+  .index-main .nav-two {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .index-main .nav-two .links-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      width: 70%;
+      height: 50px;
+      margin: 0;
+      padding: 0;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px -4px rgba(148, 148, 148, 0.69);
+      -webkit-box-shadow: 0px 4px 10px -4px rgba(148, 148, 148, 0.69);
+      -moz-box-shadow: 0px 4px 10px -4px rgba(148, 148, 148, 0.69); }
+      .index-main .nav-two .links-container .links {
+        margin: 5px 10px 5px 10px;
+        list-style: none; }
+        .index-main .nav-two .links-container .links a {
+          text-decoration: none;
+          font-size: 1rem;
+          font-weight: 600;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #626262;
+          border-radius: 10px;
+          padding: 15px;
+          transition: all 300ms ease; }
+          .index-main .nav-two .links-container .links a:hover {
+            background-color: #00795b;
+            color: #ffffff; }
+  .index-main .pizzas h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #626262;
+    margin: 25px;
+    margin: 50px 20px 20px 20px; }
+  .index-main .pizzas .pizzas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .index-main .pizzas .pizzas-container .aproduct {
+      background-color: #ffffff;
+      border: solid 1px #59595921;
+      display: inline-block;
+      height: 440px;
+      width: 255px;
+      margin: 15px;
+      border-radius: 15px;
+      position: relative;
+      transition-duration: 0.3s; }
+      .index-main .pizzas .pizzas-container .aproduct:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67);
+        -webkit-box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67); }
+      .index-main .pizzas .pizzas-container .aproduct img {
+        height: 220px;
+        margin-left: 18px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition-duration: 1s; }
+        .index-main .pizzas .pizzas-container .aproduct img:hover {
+          transform: rotate(5deg); }
+      .index-main .pizzas .pizzas-container .aproduct .product-desc h3 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #626262;
+        margin: 10px; }
+      .index-main .pizzas .pizzas-container .aproduct .product-desc .product-rating {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .index-main .pizzas .pizzas-container .aproduct .product-desc .product-rating .star-btn {
+          margin: 2px;
+          cursor: pointer;
+          padding: 0; }
+          .index-main .pizzas .pizzas-container .aproduct .product-desc .product-rating .star-btn .fa-star {
+            color: #ffc107; }
+      .index-main .pizzas .pizzas-container .aproduct .product-desc p {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        line-height: 19px;
+        font-weight: normal;
+        margin: 5px 5px 10px 20px;
+        color: #5f5f5f; }
+      .index-main .pizzas .pizzas-container .aproduct button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+        color: #626262;
+        background-color: #ffffff00;
+        border-radius: 25px;
+        border: none;
+        outline: 2px solid #00795b;
+        position: absolute;
+        right: 10px;
+        bottom: 21px;
+        width: 100px;
+        transition-duration: 0.25s; }
+        .index-main .pizzas .pizzas-container .aproduct button:hover {
+          background-color: #00795b;
+          color: #ffffff; }
+      .index-main .pizzas .pizzas-container .aproduct b {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        color: #626262;
+        border-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute;
+        bottom: 19px;
+        left: 10px;
+        width: 100px; }
+  .index-main .empanadas h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #626262;
+    margin: 25px; }
+  .index-main .empanadas .empanadas-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .index-main .empanadas .empanadas-container .bproduct {
+      background-color: #ffffff;
+      border: solid 1px #59595921;
+      display: inline-block;
+      height: 440px;
+      width: 255px;
+      margin: 15px;
+      border-radius: 15px;
+      position: relative;
+      transition-duration: 0.3s; }
+      .index-main .empanadas .empanadas-container .bproduct:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67);
+        -webkit-box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67); }
+      .index-main .empanadas .empanadas-container .bproduct img {
+        height: 220px;
+        margin-left: 18px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition-duration: 1s; }
+        .index-main .empanadas .empanadas-container .bproduct img:hover {
+          transform: rotate(5deg); }
+      .index-main .empanadas .empanadas-container .bproduct .product-desc h3 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #626262;
+        margin: 10px; }
+      .index-main .empanadas .empanadas-container .bproduct .product-desc .product-rating {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .index-main .empanadas .empanadas-container .bproduct .product-desc .product-rating .star-btn {
+          margin: 2px;
+          cursor: pointer;
+          padding: 0; }
+          .index-main .empanadas .empanadas-container .bproduct .product-desc .product-rating .star-btn .fa-star {
+            color: #ffc107; }
+      .index-main .empanadas .empanadas-container .bproduct .product-desc p {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        line-height: 18px;
+        font-weight: normal;
+        margin: 5px 5px 10px 20px;
+        color: #5f5f5f; }
+      .index-main .empanadas .empanadas-container .bproduct button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+        color: #626262;
+        background-color: #ffffff00;
+        border-radius: 25px;
+        border: none;
+        outline: 2px solid #00795b;
+        position: absolute;
+        right: 10px;
+        bottom: 22px;
+        width: 100px;
+        transition-duration: 0.25s; }
+        .index-main .empanadas .empanadas-container .bproduct button:hover {
+          background-color: #00795b;
+          color: #ffffff; }
+      .index-main .empanadas .empanadas-container .bproduct b {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        color: #626262;
+        border-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        width: 100px; }
+  .index-main .complementos h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #626262;
+    margin: 25px; }
+  .index-main .complementos .complementos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .index-main .complementos .complementos-container .cproduct {
+      background-color: #ffffff;
+      border: solid 1px #59595921;
+      display: inline-block;
+      height: 440px;
+      width: 255px;
+      margin: 15px;
+      border-radius: 15px;
+      position: relative;
+      transition-duration: 0.3s; }
+      .index-main .complementos .complementos-container .cproduct:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67);
+        -webkit-box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67); }
+      .index-main .complementos .complementos-container .cproduct img {
+        height: 220px;
+        margin-left: 18px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition-duration: 1s; }
+        .index-main .complementos .complementos-container .cproduct img:hover {
+          transform: rotate(5deg); }
+      .index-main .complementos .complementos-container .cproduct .product-desc h3 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #626262;
+        margin: 10px; }
+      .index-main .complementos .complementos-container .cproduct .product-desc .product-rating {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .index-main .complementos .complementos-container .cproduct .product-desc .product-rating .star-btn {
+          margin: 2px;
+          cursor: pointer;
+          padding: 0; }
+          .index-main .complementos .complementos-container .cproduct .product-desc .product-rating .star-btn .fa-star {
+            color: #ffc107; }
+      .index-main .complementos .complementos-container .cproduct .product-desc p {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        line-height: 18px;
+        font-weight: normal;
+        margin: 5px 5px 10px 20px;
+        color: #5f5f5f; }
+      .index-main .complementos .complementos-container .cproduct button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+        color: #626262;
+        background-color: #ffffff00;
+        border-radius: 25px;
+        border: none;
+        outline: 2px solid #00795b;
+        position: absolute;
+        right: 10px;
+        bottom: 22px;
+        width: 100px;
+        transition-duration: 0.25s; }
+        .index-main .complementos .complementos-container .cproduct button:hover {
+          background-color: #00795b;
+          color: #ffffff; }
+      .index-main .complementos .complementos-container .cproduct b {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        color: #626262;
+        border-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        width: 100px; }
+
+/*-----MAIN COMBOs-----*/
+.comb-main {
+  background-color: #fafafa; }
+  .comb-main .combos {
+    background-color: #fafafa; }
+    .comb-main .combos .combos-title {
+      display: block; }
+      .comb-main .combos .combos-title h1 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        color: #626262;
+        margin-top: 15px;
+        font-weight: 600;
+        margin: 10px; }
+      .comb-main .combos .combos-title h2 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1rem;
+        color: #626262;
+        font-weight: 600;
+        margin: 10px; }
+  .comb-main .combos-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center; }
+    .comb-main .combos-grid-container .item-cero {
+      grid-row: 1 / 3;
+      height: 989px;
+      border-radius: 15px; }
+      .comb-main .combos-grid-container .item-cero img {
+        height: 100%;
+        border-radius: 15px; }
+    .comb-main .combos-grid-container .comb-product {
+      background-color: #ffffff;
+      border: solid 1px #59595921;
+      display: inline-block;
+      height: 440px;
+      width: 255px;
+      margin: 15px;
+      border-radius: 15px;
+      position: relative;
+      transition-duration: 0.5s; }
+      .comb-main .combos-grid-container .comb-product:hover {
+        transform: scale(1.01);
+        box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67);
+        -webkit-box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67);
+        -moz-box-shadow: 0px 4px 12px -7px rgba(0, 0, 0, 0.67); }
+      .comb-main .combos-grid-container .comb-product img {
+        height: 220px;
+        margin-left: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        transition-duration: 1s; }
+        .comb-main .combos-grid-container .comb-product img:hover {
+          transform: rotate(5deg); }
+      .comb-main .combos-grid-container .comb-product .product-desc h3 {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #626262;
+        margin: 10px; }
+      .comb-main .combos-grid-container .comb-product .product-desc .product-rating {
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .comb-main .combos-grid-container .comb-product .product-desc .product-rating .star-btn {
+          margin: 2px;
+          cursor: pointer;
+          padding: 0; }
+          .comb-main .combos-grid-container .comb-product .product-desc .product-rating .star-btn .fa-star {
+            color: #ffc107; }
+      .comb-main .combos-grid-container .comb-product .product-desc p {
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        font-weight: normal;
+        line-height: 20px;
+        margin: 5px 5px 10px 20px;
+        color: #5f5f5f; }
+      .comb-main .combos-grid-container .comb-product b {
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 5px;
+        color: #626262;
+        border-radius: 25px;
+        border: 3px solid #9195941f;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        width: 100px; }
+      .comb-main .combos-grid-container .comb-product button {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        padding: 5px;
+        color: #626262;
+        background-color: #ffffff00;
+        border-radius: 25px;
+        border: none;
+        outline: 2px solid #00795b;
+        position: absolute;
+        right: 10px;
+        bottom: 22px;
+        width: 100px;
+        transition-duration: 0.25s; }
+        .comb-main .combos-grid-container .comb-product button:hover {
+          background-color: #00795b;
+          color: #ffffff; }
+
+/*-----MAIN CONTACTO-----*/
+.contacto-main {
+  background-color: #111111; }
+  .contacto-main .titulo-contacto-container {
+    text-align: center; }
+    .contacto-main .titulo-contacto-container h1 {
+      font-family: sans-serif, Arial, Helvetica;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #d9d7d7; }
+    .contacto-main .titulo-contacto-container h2 {
+      font-family: sans-serif, Arial, Helvetica;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #d9d7d7;
+      margin: 25px; }
+  .contacto-main .form-container {
+    z-index: 1;
+    max-width: 360px;
+    margin: 0px auto 0;
+    padding: 45px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 15px; }
+    .contacto-main .form-container .contacto-form section div .cuadro {
+      font-family: sans-serif;
+      outline: 0;
+      background-color: #fafafa;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+      border-radius: 10px; }
+      .contacto-main .form-container .contacto-form section div .cuadro:focus {
+        outline: solid 2px #00795b; }
+    .contacto-main .form-container .contacto-form section div .form-select {
+      font-family: sans-serif;
+      outline: 0;
+      background-color: #fafafa;
+      width: 100%;
+      border: 0;
+      margin: 0 0 15px;
+      padding: 15px;
+      box-sizing: border-box;
+      font-size: 14px;
+      border-radius: 10px;
+      color: #5f5f5f; }
+      .contacto-main .form-container .contacto-form section div .form-select:focus {
+        outline: solid 2px #00795b;
+        box-shadow: none; }
+      .contacto-main .form-container .contacto-form section div .form-select .opti {
+        background-color: #fafafa; }
+    .contacto-main .form-container .contacto-form section .textarea-container textarea {
+      width: 100%;
+      background-color: #fafafa;
+      border: 0;
+      padding: 10px;
+      font-size: 0.9rem;
+      resize: none;
+      border-radius: 10px; }
+      .contacto-main .form-container .contacto-form section .textarea-container textarea:focus {
+        outline: solid 2px #00795b; }
+    .contacto-main .form-container .contacto-form section .botones {
+      display: flex;
+      justify-content: center; }
+      .contacto-main .form-container .contacto-form section .botones .button {
+        background-color: #fafafa;
+        border: 0;
+        padding: 10px;
+        font-size: 0.9rem;
+        width: 40%;
+        border-radius: 50%;
+        transition-duration: 0.3s;
+        margin: 5px 20px 0 20px; }
+        .contacto-main .form-container .contacto-form section .botones .button:hover {
+          background-color: #0b5744;
+          color: white; }
+
+/*-----MAIN PAGOS-----*/
+.main-pagos {
+  background-color: #fafafa; }
+  .main-pagos .titulo-pagos h1 {
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 1.9rem;
+    color: #1cbe72;
+    margin: 20px 0 10px 20px;
+    text-align: center; }
+  .main-pagos .linea {
+    height: 2px;
+    max-width: 95%;
+    padding: 0;
+    margin: 20px;
+    margin: 0 20px 20px 20px;
+    background-color: #1cbe72;
+    border-radius: 50%; }
+  .main-pagos .pagos-container-dos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap; }
+    .main-pagos .pagos-container-dos .moto-container {
+      margin-top: 20px;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main-pagos .pagos-container-dos .moto-container img {
+        height: 110px; }
+      .main-pagos .pagos-container-dos .moto-container h2 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 1.1rem;
+        color: #000000; }
+      .main-pagos .pagos-container-dos .moto-container h3 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 1rem;
+        color: #626262; }
+      .main-pagos .pagos-container-dos .moto-container h4 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 0.8rem;
+        color: #626262; }
+    .main-pagos .pagos-container-dos .mapas {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      .main-pagos .pagos-container-dos .mapas h2 {
+        color: #626262;
+        font-size: 1.7rem;
+        text-align: center; }
+      .main-pagos .pagos-container-dos .mapas a img {
+        height: 120px;
+        transition-duration: 0.3s; }
+        .main-pagos .pagos-container-dos .mapas a img:hover {
+          filter: drop-shadow(0px 0px 2px #00000073); }
+  .main-pagos .pagos-container-tres {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    .main-pagos .pagos-container-tres .metodopago-uno {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .main-pagos .pagos-container-tres .metodopago-uno img {
+        height: 70px;
+        margin-left: 20px; }
+      .main-pagos .pagos-container-tres .metodopago-uno h2 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 0.9rem;
+        color: #626262;
+        margin-left: 20px; }
+    .main-pagos .pagos-container-tres .vertical {
+      height: 140px;
+      border: 1px solid #1cbe72;
+      border-radius: 50%;
+      margin: 0 30px 0 30px; }
+    .main-pagos .pagos-container-tres .metodopago-dos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .main-pagos .pagos-container-tres .metodopago-dos img {
+        height: 60px;
+        margin-left: 20px; }
+      .main-pagos .pagos-container-tres .metodopago-dos h2 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 0.9rem;
+        color: #626262;
+        margin-left: 20px; }
+    .main-pagos .pagos-container-tres .metodopago-tres {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+      .main-pagos .pagos-container-tres .metodopago-tres img {
+        height: 70px;
+        margin-left: 20px; }
+      .main-pagos .pagos-container-tres .metodopago-tres h2 {
+        font-family: sans-serif, Arial, Helvetica;
+        font-size: 0.9rem;
+        color: #626262;
+        margin-left: 20px; }
+
+/*-----MAIN SUCURSALES-----*/
+.main-sucursales {
+  background-color: #fafafa; }
+  .main-sucursales .sucursales {
+    background-color: #fafafa;
+    display: inline-block;
+    justify-content: center;
+    width: 100%; }
+    .main-sucursales .sucursales h1 {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #626262;
+      margin: 30px;
+      padding: 10px; }
+    .main-sucursales .sucursales .maps-container {
+      background-color: #fafafa;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .main-sucursales .sucursales .maps-container .maps {
+        background-color: #fafafa;
+        display: inline-block;
+        height: 348px;
+        width: 402px;
+        margin: 30px 15px 30px 15px;
+        position: relative; }
+        .main-sucursales .sucursales .maps-container .maps h3 {
+          font-family: 'Poppins', sans-serif;
+          font-weight: bold;
+          font-size: 15px;
+          text-align: center;
+          padding: 10px;
+          color: #ffffff;
+          background-color: #00795b;
+          position: absolute;
+          top: 8px;
+          width: 100%;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px; }
+        .main-sucursales .sucursales .maps-container .maps iframe {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          bottom: 0px;
+          width: 100%; }
+
+.subir {
+  display: none; }
+  .subir a .fa-arrow-up {
+    color: #626262;
+    font-size: 1.3rem; }
+
+/*-----FOOTER-----*/
+Footer .footer-grid {
+  background-color: #111111;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 130px 130px;
+  grid-template-areas: "logo logo logo" "horario derechos redes"; }
+  Footer .footer-grid .foot-logo {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-area: logo; }
+    Footer .footer-grid .foot-logo a img {
+      width: 140px; }
+  Footer .footer-grid .foot-horario {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    grid-area: horario; }
+    Footer .footer-grid .foot-horario p {
+      color: #ffffff;
+      font-family: sans-serif, Arial, Helvetica;
+      font-size: small;
+      margin: 1rem; }
+  Footer .footer-grid .foot-derechos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: derechos; }
+    Footer .footer-grid .foot-derechos p {
+      color: #ffffff;
+      font-family: sans-serif, Arial, Helvetica, 'Poppins';
+      font-size: x-small;
+      text-align: center; }
+  Footer .footer-grid .foot-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    grid-area: redes; }
+    Footer .footer-grid .foot-redes p {
+      color: #ffffff;
+      font-family: sans-serif, Arial, Helvetica, 'Poppins';
+      margin: 15px;
+      font-size: 0.9rem; }
+    Footer .footer-grid .foot-redes a {
+      position: relative; }
+      Footer .footer-grid .foot-redes a .icon {
+        font-size: 2.4rem;
+        color: #fff;
+        margin: 4px;
+        transition: all 0.6s; }
+        Footer .footer-grid .foot-redes a .icon:hover {
+          color: #5f5f5f; }
+          Footer .footer-grid .foot-redes a .icon:hover + .tooltip-icon {
+            opacity: 1; }
+      Footer .footer-grid .foot-redes a .tooltip-icon {
+        text-align: center;
+        position: absolute;
+        font-size: 0.8rem;
+        bottom: 55px;
+        left: -5px;
+        height: 20px;
+        width: 60px;
+        background-color: #626262;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 5px;
+        opacity: 0;
+        transition: 0.6s; }
+
+/*-----FIXED-----*/
+.subir {
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }
+  .subir a img {
+    width: 30px;
+    height: 30px; }
+
+/*----- MEDIA QUERYS -----*/
+@media screen and (max-width: 1270px) {
+  .index-main section .index-anuncio-container {
+    height: auto;
+    width: 100%; }
+  .index-main section .index-anuncio-container img {
+    height: auto;
+    width: 100%; } }
+
+@media screen and (max-width: 1160px) {
+  .comb-main .combos .combos-grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto; } }
+
+@media screen and (max-width: 1140px) {
+  .index-main .pizzas .pizzas-container {
+    justify-content: space-around; }
+  .index-main .empanadas .empanadas-container {
+    justify-content: space-around; }
+  .index-main .complementos .complementos-container {
+    justify-content: space-around; }
+  .main-pagos .pagos-container-tres .vertical {
+    display: none; } }
+
+@media screen and (max-width: 991px) {
+  header .navbar .container-fluid .logo-container {
+    top: 0;
+    margin-top: 28px; }
+  header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    margin: 5px; }
+  header .navbar .container-fluid .logo-container a .navbar-logo {
+    margin-top: 20px; }
+  header .navbar .container-fluid .btn-primary {
+    display: block;
+    position: absolute;
+    top: 17px;
+    right: 13px; } }
+
+@media screen and (max-width: 980px) {
+  .index-main .nav-two .links-container {
+    width: 85%; }
+  .main-combos .titulo-pagos h1 {
+    font-size: 1.7rem; }
+  footer .footer-grid .foot-horario p {
+    font-size: 0.6rem; }
+  footer .footer-grid .foot-derechos p {
+    font-size: 0.6rem; } }
+
+@media screen and (max-width: 880px) {
+  .index-main .nav-two .links-container {
+    width: 100%; }
+  .comb-main .combos .combos-grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; }
+  .comb-main .combos .combos-grid-container .item-cero {
+    display: none; } }
+
+@media screen and (max-width: 860px) {
+  .index-main h1 {
+    font-size: 1.2rem; }
+  footer .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 130px 130px;
+    grid-template-areas: "logo redes" "horario derechos"; }
+  footer .footer-grid .foot-logo {
+    grid-column: 1 /2;
+    justify-content: left;
+    margin-left: 100px; }
+  footer .footer-grid .foot-horario {
+    margin-left: 80px; }
+  footer .footer-grid .foot-redes {
+    justify-content: end;
+    margin-right: 100px; }
+  footer .footer-grid .foot-redes p {
+    font-size: 0.7rem; }
+  footer .footer-grid .foot-derechos {
+    justify-content: flex-end;
+    margin-right: 100px;
+    margin-bottom: 10px; }
+  footer .footer-grid .foot-derechos p {
+    font-size: 0.5rem; } }
+
+@media screen and (max-width: 680px) {
+  footer .footer-grid .foot-logo {
+    justify-content: left;
+    margin-left: 30px; }
+  footer .footer-grid .foot-horario {
+    margin-left: 30px; }
+  footer .footer-grid .foot-redes {
+    justify-content: end;
+    margin-right: 30px; }
+  footer .footer-grid .foot-derechos {
+    justify-content: flex-end;
+    margin-right: 30px;
+    margin-bottom: 10px; }
+  .index-main .nav-two .links-container .links a {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 600px) {
+  .comb-main .combos .combos-grid-container .comb-product {
+    margin: 5px;
+    height: 380px;
+    width: 200px; }
+  .comb-main .combos .combos-grid-container .comb-product img {
+    height: 180px;
+    margin-left: 9px; }
+  .comb-main .combos .combos-grid-container .comb-product .product-desc p {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 5px;
+    margin-top: 15px; }
+  .comb-main .combos .combos-grid-container .comb-product b {
+    padding: 0;
+    width: 80px;
+    left: 10px;
+    bottom: 18px; }
+  .comb-main .combos .combos-grid-container .comb-product button {
+    padding: 2px;
+    width: 80px;
+    outline: 1px solid #00795b;
+    bottom: 18px; } }
+
+@media screen and (max-width: 560px) {
+  .index-main h1 {
+    font-size: 0.9rem; }
+  .index-main .pizzas h2 {
+    font-size: 1rem; }
+  .index-main .pizzas .pizzas-container .aproduct {
+    height: 410px;
+    width: 200px;
+    margin: 5px; }
+  .index-main .pizzas .pizzas-container .aproduct img {
+    height: 180px;
+    margin-left: 9px; }
+  .index-main .pizzas .pizzas-container .aproduct .product-desc p {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 5px; }
+  .index-main .pizzas .pizzas-container .aproduct b {
+    padding: 0;
+    width: 80px;
+    left: 10px;
+    bottom: 18px; }
+  .index-main .pizzas .pizzas-container .aproduct button {
+    padding: 2px;
+    width: 80px;
+    outline: 1px solid #00795b;
+    bottom: 18px; }
+  .index-main .empanadas .empanadas-container .bproduct {
+    height: 410px;
+    width: 200px;
+    margin: 5px; }
+  .index-main .empanadas .empanadas-container .bproduct img {
+    height: 180px;
+    margin-left: 9px; }
+  .index-main .empanadas .empanadas-container .bproduct .product-desc p {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 5px; }
+  .index-main .empanadas .empanadas-container .bproduct b {
+    padding: 0;
+    width: 80px;
+    left: 10px;
+    bottom: 18px; }
+  .index-main .empanadas .empanadas-container .bproduct button {
+    padding: 2px;
+    width: 80px;
+    outline: 1px solid #00795b;
+    bottom: 18px; }
+  .index-main .complementos .complementos-container .cproduct {
+    height: 410px;
+    width: 200px;
+    margin: 5px; }
+  .index-main .complementos .complementos-container .cproduct img {
+    height: 180px;
+    margin-left: 9px; }
+  .index-main .complementos .complementos-container .cproduct .product-desc p {
+    text-align: center;
+    font-size: 0.7rem;
+    margin: 5px; }
+  .index-main .complementos .complementos-container .cproduct b {
+    padding: 0;
+    width: 80px;
+    left: 10px;
+    bottom: 18px; }
+  .index-main .complementos .complementos-container .cproduct button {
+    padding: 2px;
+    width: 80px;
+    outline: 1px solid #00795b;
+    bottom: 18px; }
+  .index-main .empanadas h2 {
+    font-size: 1rem; }
+  .index-main .complementos h2 {
+    font-size: 1rem; }
+  .index-main .nav-two .links-container .links a {
+    padding: 15px 5px 15px 5px; }
+  .comb-main .combos .combos-title h1 {
+    font-size: 1rem; }
+  .comb-main .combos .combos-title h2 {
+    font-size: 0.9rem; }
+  .main-pagos .titulo-pagos h1 {
+    font-size: 1.3rem; }
+  .main-sucursales .sucursales h1 {
+    font-size: 1rem; }
+  footer .footer-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px 130px 130px;
+    grid-template-areas: "logo" "redes" "horario" "derechos"; }
+  footer .footer-grid .foot-logo {
+    justify-content: center;
+    margin: 0; }
+  footer .footer-grid .foot-redes {
+    justify-content: center;
+    margin: 0; }
+  footer .footer-grid .foot-horario {
+    justify-content: center;
+    margin: 0; }
+  footer .footer-grid .foot-derechos {
+    justify-content: center;
+    margin: 0; } }
+
+@media screen and (max-width: 510px) {
+  header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd img {
+    height: 90px;
+    left: 1%; }
+  header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .amount {
+    right: 16.5%; }
+  header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div h3 {
+    left: 30%;
+    font-size: 0.7rem; }
+  header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd b {
+    left: 30%; } }
+
+@media screen and (max-width: 445px) {
+  header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd img {
+    height: 80px; }
+  header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section input {
+    width: 90%; }
+  header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section textarea {
+    width: 90%; }
+  .index-main h1 {
+    font-size: 0.8rem; }
+  .index-main .pizzas h2 {
+    font-size: 0.9rem; }
+  .index-main .empanadas h2 {
+    font-size: 0.9rem; }
+  .index-main .complementos h2 {
+    font-size: 0.9rem; }
+  .index-main .nav-two .links-container .links {
+    margin: 0; }
+  .index-main .nav-two .links-container .links a {
+    margin: 5px;
+    font-size: 0.7rem; }
+  .index-main .pizzas .pizzas-container .aproduct {
+    height: 390px;
+    width: 250px; }
+  .index-main .pizzas .pizzas-container .aproduct img {
+    height: 180px;
+    margin-left: 14%; }
+  .index-main .pizzas .pizzas-container .aproduct b {
+    padding: 5px;
+    width: 100px;
+    left: 10px;
+    bottom: 20px; }
+  .index-main .pizzas .pizzas-container .aproduct button {
+    padding: 5px;
+    bottom: 22px;
+    width: 100px;
+    outline: 2px solid #00795b;
+    bottom: 22px; }
+  .index-main .empanadas .empanadas-container .bproduct {
+    height: 390px;
+    width: 250px; }
+  .index-main .empanadas .empanadas-container .bproduct img {
+    height: 180px;
+    margin-left: 14%; }
+  .index-main .empanadas .empanadas-container .bproduct b {
+    padding: 5px;
+    width: 100px;
+    left: 10px;
+    bottom: 20px; }
+  .index-main .empanadas .empanadas-container .bproduct button {
+    padding: 5px;
+    bottom: 22px;
+    width: 100px;
+    outline: 2px solid #00795b;
+    bottom: 22px; }
+  .index-main .complementos .complementos-container .cproduct {
+    height: 390px;
+    width: 250px; }
+  .index-main .complementos .complementos-container .cproduct img {
+    height: 180px;
+    margin-left: 14%; }
+  .index-main .complementos .complementos-container .cproduct b {
+    padding: 5px;
+    width: 100px;
+    left: 10px;
+    bottom: 20px; }
+  .index-main .complementos .complementos-container .cproduct button {
+    padding: 5px;
+    bottom: 22px;
+    width: 100px;
+    outline: 2px solid #00795b;
+    bottom: 22px; }
+  .subir {
+    display: block; }
+  .comb-main .combos .combos-title h1 {
+    font-size: 0.9rem; }
+  .comb-main .combos .combos-title h2 {
+    font-size: 0.8rem; }
+  .comb-main .combos .combos-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto; }
+  .comb-main .combos .combos-grid-container .comb-product {
+    height: 390px;
+    width: 250px; }
+  .comb-main .combos .combos-grid-container .comb-product img {
+    height: 180px;
+    margin-left: 16%; }
+  .comb-main .combos .combos-grid-container .comb-product b {
+    padding: 5px;
+    width: 100px;
+    left: 10px;
+    bottom: 20px; }
+  .comb-main .combos .combos-grid-container .comb-product button {
+    padding: 5px;
+    bottom: 22px;
+    width: 100px;
+    outline: 2px solid #00795b;
+    bottom: 22px; }
+  .contacto-main .titulo-contacto-container h1 {
+    font-size: 1.2rem; }
+  .contacto-main .titulo-contacto-container h2 {
+    font-size: 0.9rem;
+    line-height: 20px; }
+  .main-pagos.pagos-container-dos .moto-container {
+    margin-right: 0; }
+  .main-pagos.pagos-container-dos .moto-container img {
+    height: 75px; }
+  .main-pagos.pagos-container-dos .moto-container h2 {
+    font-size: 1rem; }
+  .main-pagos.pagos-container-dos .moto-container h3 {
+    font-size: 0.9rem; }
+  .main-pagos.pagos-container-dos .moto-container h4 {
+    font-size: 0.7rem; }
+  .main-pagos .pagos-container-tres .metodopago-uno img {
+    height: 50px;
+    margin: 0; }
+  .main-pagos .pagos-container-tres .metodopago-uno h2 {
+    font-size: 0.8rem; }
+  .main-pagos .pagos-container-tres .metodopago-dos img {
+    height: 50px;
+    margin: 0; }
+  .main-pagos .pagos-container-tres .metodopago-dos h2 {
+    font-size: 0.8rem; }
+  .main-pagos.pagos-container-tres .metodopago-tres img {
+    height: 50px;
+    margin: 0; }
+  .main-pagos .pagos-container-tres .metodopago-tres h2 {
+    font-size: 0.8rem; }
+  .main-pagos .pagos-container-dos .moto-container h2 {
+    font-size: 1rem; }
+  .main-pagos .pagos-container-dos .moto-container h3 {
+    font-size: 1rem; }
+  .main-pagos .pagos-container-dos .moto-container h4 {
+    font-size: 0.7rem; }
+  .main-sucursales .sucursales h1 {
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 390px) {
+  header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-footer .totalContainer {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px; }
+  header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-footer button {
+    width: 100%; }
+  .index-main h1 {
+    font-size: 0.7rem; }
+  .comb-main .combos .combos-title h1 {
+    font-size: 0.8rem; }
+  .comb-main .combos .combos-title h2 {
+    font-size: 0.7rem; }
+  .contacto-main .titulo-contacto-container h1 {
+    font-size: 1rem; }
+  .contacto-main .titulo-contacto-container h2 {
+    font-size: 0.8rem;
+    line-height: 17px; }
+  .contacto-main .form-container {
+    max-width: 320px; }
+  .contacto-main .form-container .contacto-form section div textarea {
+    max-width: 230px; }
+  .contacto-main .form-container .contacto-form section .botones .button {
+    font-size: 0.7rem; }
+  .main-pagos .pagos-container-tres .metodopago-tres h2 {
+    font-size: 0.7rem; }
+  .main-pagos .pagos-container-dos .moto-container h2 {
+    font-size: 0.9rem; }
+  .main-pagos .pagos-container-dos .moto-container h3 {
+    font-size: 0.9rem; }
+  .main-pagos .pagos-container-dos .moto-container h4 {
+    font-size: 0.6rem; }
+  .main-sucursales .sucursales h1 {
+    font-size: 0.8rem; } }

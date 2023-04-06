@@ -1,0 +1,553 @@
+/*----- MEDIA QUERYS -----*/
+@media screen and (max-width:1270px) {
+    .index-main section .index-anuncio-container{
+        height: auto;
+        width: 100%;
+    }
+    .index-main section .index-anuncio-container img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1160px) {
+    .comb-main .combos .combos-grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+}
+
+@media screen and (max-width:1140px) {
+    .index-main .pizzas .pizzas-container {
+        justify-content: space-around;
+    }
+    .index-main .empanadas .empanadas-container {
+        justify-content: space-around;
+    }
+    .index-main .complementos .complementos-container {
+        justify-content: space-around;
+    }
+    .main-pagos .pagos-container-tres .vertical {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:991px){
+    header .navbar .container-fluid .logo-container{
+        top: 0;
+        margin-top: 28px;
+    }
+    header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link{
+        margin: 5px;
+    }
+    header .navbar .container-fluid .logo-container a .navbar-logo{
+        margin-top: 20px;
+    }
+    header .navbar .container-fluid .btn-primary{
+        display: block;
+        position: absolute;
+        top: 17px;
+        right: 13px;
+    }
+}
+@media screen and (max-width:980px) {
+    .index-main .nav-two .links-container{
+        width: 85%;
+    }
+    .main-combos .titulo-pagos h1{
+        font-size: 1.7rem;
+    }
+    footer .footer-grid .foot-horario p {
+        font-size: 0.6rem;
+    }
+    footer .footer-grid .foot-derechos p {
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width:880px) {
+    .index-main .nav-two .links-container{
+        width: 100%;
+    }
+    .comb-main .combos .combos-grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .comb-main .combos .combos-grid-container .item-cero {
+        display: none;
+    }
+}
+
+@media screen and (max-width:860px) {
+    .index-main h1{
+        font-size: 1.2rem;
+    }
+    footer .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 130px 130px;
+        grid-template-areas:
+            "logo redes"
+            "horario derechos"
+        ;
+    }
+    footer .footer-grid .foot-logo {
+        grid-column: 1 /2;
+        justify-content: left;
+        margin-left: 100px;
+    }
+    footer .footer-grid .foot-horario {
+        margin-left: 80px;
+    }
+    footer .footer-grid .foot-redes {
+        justify-content: end;
+        margin-right: 100px;
+    }
+    footer .footer-grid .foot-redes p {
+        font-size: 0.7rem;
+    }
+    footer .footer-grid .foot-derechos {
+        justify-content: flex-end;
+        margin-right: 100px;
+        margin-bottom: 10px;
+    }
+    footer .footer-grid .foot-derechos p {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:680px) {
+    footer .footer-grid .foot-logo {
+        justify-content: left;
+        margin-left: 30px;
+    }
+    footer .footer-grid .foot-horario {
+        margin-left: 30px;
+    }
+    footer .footer-grid .foot-redes {
+        justify-content: end;
+        margin-right: 30px;
+    }
+    footer .footer-grid .foot-derechos {
+        justify-content: flex-end;
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+    .index-main .nav-two .links-container .links a{
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .comb-main .combos .combos-grid-container .comb-product{
+        margin: 5px;
+        height: 380px;
+        width: 200px;
+    }
+    .comb-main .combos .combos-grid-container .comb-product img{
+        height: 180px;
+        margin-left: 9px;
+    }
+    .comb-main .combos .combos-grid-container .comb-product .product-desc p{
+        text-align: center;
+        font-size: 0.7rem;
+        margin: 5px;
+        margin-top: 15px;
+    }
+    .comb-main .combos .combos-grid-container .comb-product b{
+        padding: 0;
+        width: 80px;
+        left: 10px;
+        bottom: 18px;
+    }
+    .comb-main .combos .combos-grid-container .comb-product button{
+        padding: 2px;
+        width: 80px;
+        outline: 1px solid #00795b;
+        bottom: 18px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .index-main h1{
+        font-size: 0.9rem;
+    }
+    .index-main .pizzas h2{
+        font-size: 1rem;
+    }
+    .index-main .pizzas .pizzas-container .aproduct{
+        height: 410px;
+        width: 200px;
+        margin: 5px;
+    }
+    .index-main .pizzas .pizzas-container .aproduct img{
+        height: 180px;
+        margin-left: 9px;
+    }
+    .index-main .pizzas .pizzas-container .aproduct .product-desc p{
+        text-align: center;
+        font-size: 0.7rem;
+        margin: 5px;
+    }
+    .index-main .pizzas .pizzas-container .aproduct b{
+        padding: 0;
+        width: 80px;
+        left: 10px;
+        bottom: 18px;
+    }
+    .index-main .pizzas .pizzas-container .aproduct button{
+        padding: 2px;
+        width: 80px;
+        outline: 1px solid #00795b;
+        bottom: 18px;
+    }
+    
+    .index-main .empanadas .empanadas-container .bproduct{
+        height: 410px;
+        width: 200px;
+        margin: 5px;
+    }
+    .index-main .empanadas .empanadas-container .bproduct img{
+        height: 180px;
+        margin-left: 9px;
+    }
+    .index-main .empanadas .empanadas-container .bproduct .product-desc p{
+        text-align: center;
+        font-size: 0.7rem;
+        margin: 5px;
+    }
+    .index-main .empanadas .empanadas-container .bproduct b{
+        padding: 0;
+        width: 80px;
+        left: 10px;
+        bottom: 18px;
+    }
+    .index-main .empanadas .empanadas-container .bproduct button{
+        padding: 2px;
+        width: 80px;
+        outline: 1px solid #00795b;
+        bottom: 18px;
+    }
+    .index-main .complementos .complementos-container .cproduct{
+        height: 410px;
+        width: 200px;
+        margin: 5px;
+    }
+    .index-main .complementos .complementos-container .cproduct img{
+        height: 180px;
+        margin-left: 9px;
+    }
+    .index-main .complementos .complementos-container .cproduct .product-desc p{
+        text-align: center;
+        font-size: 0.7rem;
+        margin: 5px;
+    }
+    .index-main .complementos .complementos-container .cproduct b{
+        padding: 0;
+        width: 80px;
+        left: 10px;
+        bottom: 18px;
+    }
+    .index-main .complementos .complementos-container .cproduct button{
+        padding: 2px;
+        width: 80px;
+        outline: 1px solid #00795b;
+        bottom: 18px;
+    }
+    .index-main .empanadas h2{
+        font-size: 1rem;
+    }
+    .index-main .complementos h2{
+        font-size: 1rem;
+    }
+    .index-main .nav-two .links-container .links a{
+        padding: 15px 5px 15px 5px;
+    }
+    .comb-main .combos .combos-title h1{
+        font-size: 1rem;
+    }
+    .comb-main .combos .combos-title h2{
+        font-size: 0.9rem;
+    }
+    .main-pagos .titulo-pagos h1{
+        font-size: 1.3rem;
+    }
+    .main-sucursales .sucursales h1{
+        font-size: 1rem;
+    }
+    footer .footer-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 130px 130px 130px;
+        grid-template-areas:
+            "logo"
+            "redes"
+            "horario"
+            "derechos"
+        ;
+    }
+    footer .footer-grid .foot-logo {
+        justify-content: center;
+        margin: 0;
+    }
+    footer .footer-grid .foot-redes {
+        justify-content: center;
+        margin: 0;
+    }
+    footer .footer-grid .foot-horario {
+        justify-content: center;
+        margin: 0;
+    }
+    footer .footer-grid .foot-derechos {
+        justify-content: center;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:510px) {
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd img{
+        height: 90px;
+        left: 1%;
+    }
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div .amount{
+        right: 16.5%;
+    }
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd div h3{
+        left: 30%;
+        font-size: 0.7rem;
+    }
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd b{
+        left: 30%;
+    }
+}
+@media screen and (max-width:445px) {
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-body .modalProd img{
+        height: 80px;
+    }
+    header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section input{
+        width: 90%;
+    }
+    header .navbar .container-fluid .modal2 .modal-dialog .modal-content .modal-body2 form section textarea{
+        width: 90%;
+    }
+    .index-main h1{
+        font-size: 0.8rem;
+    }
+    .index-main .pizzas h2{
+        font-size: 0.9rem;
+    }
+    .index-main .empanadas h2{
+        font-size: 0.9rem;
+    }
+    .index-main .complementos h2{
+        font-size: 0.9rem;
+    }
+    .index-main .nav-two .links-container .links{
+        margin: 0;
+    }
+    .index-main .nav-two .links-container .links a{
+        margin: 5px;
+        font-size: 0.7rem;
+    }
+    .index-main .pizzas .pizzas-container .aproduct{
+        height: 390px;
+        width: 250px;
+    }
+    .index-main .pizzas .pizzas-container .aproduct img{
+        height: 180px;
+        margin-left: 14%;
+    }
+    .index-main .pizzas .pizzas-container .aproduct b{
+        padding: 5px;
+        width: 100px;
+        left: 10px;
+        bottom: 20px;
+    }
+    .index-main .pizzas .pizzas-container .aproduct button{
+        padding: map-get($button, padd);
+        bottom: 22px;
+        width: 100px;
+        outline: 2px solid #00795b;
+        bottom: 22px;
+    }
+    .index-main .empanadas .empanadas-container .bproduct{
+        height: 390px;
+        width: 250px;
+    }
+    .index-main .empanadas .empanadas-container .bproduct img {
+        height: 180px;
+        margin-left: 14%;
+    }
+    .index-main .empanadas .empanadas-container .bproduct b{
+        padding: 5px;
+        width: 100px;
+        left: 10px;
+        bottom: 20px;
+    }
+    .index-main .empanadas .empanadas-container .bproduct button{
+        padding: map-get($button, padd);
+        bottom: 22px;
+        width: 100px;
+        outline: 2px solid #00795b;
+        bottom: 22px;
+    }
+    .index-main .complementos .complementos-container .cproduct{
+        height: 390px;
+        width: 250px;
+    }
+    .index-main .complementos .complementos-container .cproduct img{
+        height: 180px;
+        margin-left: 14%;
+    }
+    .index-main .complementos .complementos-container .cproduct b{
+        padding: 5px;
+        width: 100px;
+        left: 10px;
+        bottom: 20px;
+    }
+    .index-main .complementos .complementos-container .cproduct button{
+        padding: map-get($button, padd);
+        bottom: 22px;
+        width: 100px;
+        outline: 2px solid #00795b;
+        bottom: 22px;
+    }
+    .subir {
+        display: block;
+    }
+    .comb-main .combos .combos-title h1{
+        font-size: 0.9rem;
+    }
+    .comb-main .combos .combos-title h2{
+        font-size: 0.8rem;
+    }
+    .comb-main .combos .combos-grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .comb-main .combos .combos-grid-container .comb-product{
+        height: 390px;
+        width: 250px;
+    }
+    .comb-main .combos .combos-grid-container .comb-product img{
+        height: 180px;
+        margin-left: 16%;
+    }
+    .comb-main .combos .combos-grid-container .comb-product b{
+        padding: 5px;
+        width: 100px;
+        left: 10px;
+        bottom: 20px;
+    }
+    .comb-main .combos .combos-grid-container .comb-product button{
+        padding: map-get($button, padd);
+        bottom: 22px;
+        width: 100px;
+        outline: 2px solid #00795b;
+        bottom: 22px;
+    }
+    .contacto-main .titulo-contacto-container h1 {
+        font-size: 1.2rem;
+    }
+    .contacto-main .titulo-contacto-container h2 {
+        font-size: 0.9rem;
+        line-height: 20px;
+    }
+    .main-pagos.pagos-container-dos .moto-container {
+        margin-right: 0;
+    }
+    .main-pagos.pagos-container-dos .moto-container img {
+        height: 75px;
+    }
+    .main-pagos.pagos-container-dos .moto-container h2 {
+        font-size: 1rem;
+    }
+    .main-pagos.pagos-container-dos .moto-container h3 {
+        font-size: 0.9rem;
+    }
+    .main-pagos.pagos-container-dos .moto-container h4 {
+        font-size: 0.7rem;
+    }
+    .main-pagos .pagos-container-tres .metodopago-uno img {
+        height: 50px;
+        margin: 0;
+    }
+    .main-pagos .pagos-container-tres .metodopago-uno h2 {
+        font-size: 0.8rem;
+    }
+    .main-pagos .pagos-container-tres .metodopago-dos img {
+        height: 50px;
+        margin: 0;
+    }
+    .main-pagos .pagos-container-tres .metodopago-dos h2 {
+        font-size: 0.8rem;
+    }
+    .main-pagos.pagos-container-tres .metodopago-tres img {
+        height: 50px;
+        margin: 0;
+    }
+    .main-pagos .pagos-container-tres .metodopago-tres h2 {
+        font-size: 0.8rem;
+    }
+    .main-pagos .pagos-container-dos .moto-container h2{
+        font-size: 1rem;
+    }
+    .main-pagos .pagos-container-dos .moto-container h3{
+        font-size: 1rem;
+    }
+    .main-pagos .pagos-container-dos .moto-container h4{
+        font-size: 0.7rem;
+    }
+    .main-sucursales .sucursales h1{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-footer .totalContainer{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    header .navbar .container-fluid .modal .modal-dialog .modal-content .modal-footer button{
+        width: 100%;
+    }
+    .index-main h1{
+        font-size: 0.7rem;
+    }
+    .comb-main .combos .combos-title h1{
+        font-size: 0.8rem;
+    }
+    .comb-main .combos .combos-title h2{
+        font-size: 0.7rem;
+    }
+    .contacto-main .titulo-contacto-container h1 {
+        font-size: 1rem;
+    }
+    .contacto-main .titulo-contacto-container h2 {
+        font-size: 0.8rem;
+        line-height: 17px;
+    }
+    .contacto-main .form-container {
+        max-width: 320px;
+    }
+    .contacto-main .form-container .contacto-form section div textarea {
+        max-width: 230px;
+    }
+    .contacto-main .form-container .contacto-form section .botones .button {
+        font-size: 0.7rem;
+    }
+    .main-pagos .pagos-container-tres .metodopago-tres h2 {
+        font-size: 0.7rem;
+    }
+    .main-pagos .pagos-container-dos .moto-container h2{
+        font-size: 0.9rem;
+    }
+    .main-pagos .pagos-container-dos .moto-container h3{
+        font-size: 0.9rem;
+    }
+    .main-pagos .pagos-container-dos .moto-container h4{
+        font-size: 0.6rem;
+    }
+    .main-sucursales .sucursales h1{
+        font-size: 0.8rem;
+    }
+}

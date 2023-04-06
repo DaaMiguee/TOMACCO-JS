@@ -1,0 +1,10 @@
+[
+    {"id": 13, "name": "Combo I", "price": 1500, "desc": "1 Pizza Muzza Grande + 4 Porciones de Faina", "img": "../img/combo-1.png", "cantidad": 1},
+    {"id": 14, "name": "Combo II", "price": 1700, "desc": "1 Pizza Muzzarella Grande + 2 Porciones de Faina + 1 Coca Cola x 1,5 lt.", "img": "../img/combo-2.png", "cantidad": 1},
+    {"id": 15, "name": "Combo III", "price": 1600, "desc": "1 Pizza Muzzarella Gr.+ 2 Porciones de Faina + 2 Cervezas Schneider x 473 cc.", "img": "../img/combo-3.png", "cantidad": 1},
+    {"id": 16, "name": "Combo IV", "price": 1700, "desc": "1 Pizza Peperoni Gr. + 2 Pociones de Faina + 1 Coca Cola x 1.5 lt.", "img": "../img/combo-4.png", "cantidad": 1},
+    {"id": 17, "name": "Combo V", "price": 1350, "desc": "2 Emp. Carne + 2 Emp. Pollo + 2 Emp. JyQ + 1 Sprite x 1.5 lt.", "img": "../img/combo-5.png", "cantidad": 1},
+    {"id": 18, "name": "Combo VI", "price": 2200, "desc": "4 Emp JyQ + 4 Emp Carne + 4 Emp Pollo + 1 Coca Cola x 1.5 lt.", "img": "../img/combo-6.png", "cantidad": 1},
+    {"id": 19, "name": "Combo VII", "price": 1500, "desc": "1 Pizza Tocino gr. + 2 Porcones de Faina + 1 Coca Cola x 1.5 lt.", "img": "../img/combo-7.png", "cantidad": 1},
+    {"id": 20, "name": "Combo VIII", "price": 2300, "desc": "4 Emp JyQ + 4 Emp Carne + 4 Emp Pollo + 2 Cerveda Schneider x 473 cc.", "img": "../img/combo-8.png", "cantidad": 1}
+]
