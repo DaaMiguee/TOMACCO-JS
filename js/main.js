@@ -212,6 +212,6 @@ payButton.addEventListener("click", () =>{
         icon: 'success',
         title: 'Pedido realizado correctamente',
         showConfirmButton: false,
-        timer: 2500
+        timer: 3000
     })
 })
