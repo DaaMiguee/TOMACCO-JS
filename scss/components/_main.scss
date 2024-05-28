@@ -1,8 +1,13 @@
 /*-----MAIN INDEX-----*/
 .index-main{
     background-color: $color-secundario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     .a-container{
         background-color: $color-principal;
+        width: 100%;
         .index-anuncio-container{
             height: 58px;
             width: 100%;
@@ -22,6 +27,7 @@
         text-align: center;
         padding: 20px;
         background-color: #62626227;
+        width: 100%;
     }
     .nav-two{
         position: sticky;
@@ -30,12 +36,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 50%;
         .links-container{
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: $color-cuaternario;
-            width: 70%;
             height: 50px;
             margin: 0;
             padding: 0;
@@ -54,7 +61,7 @@
                     color: nth($color , 2 );
                     border-radius: 10px;
                     padding: 15px;
-                    transition: all 300ms ease;
+                    transition: all 200ms ease;
                     &:hover{
                         background-color: $color-terciario;
                         color: nth($color , 4 );
@@ -64,6 +71,8 @@
         }
     }
     .pizzas{
+        max-width: $max-width;
+        width: 100%;
         h2{
             text-align: center;
             font-family: 'Poppins', sans-serif;
@@ -177,6 +186,8 @@
         }
     }
     .empanadas{
+        max-width: $max-width;
+        width: 100%;
         h2{
             text-align: center;
             font-family: 'Poppins', sans-serif;
@@ -289,6 +300,8 @@
         }
     }
     .complementos{
+        max-width: $max-width;
+        width: 100%;
         h2{
             text-align: center;
             font-family: 'Poppins', sans-serif;

@@ -3,6 +3,7 @@ header{
     .navbar{
         background-color: $color-principal;
         .container-fluid{
+            max-width: $max-width;
             .logo-container{
                 display: block;
                 position: absolute;

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "build-css": "sass scss/estilos.scss css/estilos.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/DaaMiguee/TOMACCO#readme",
   "devDependencies": {
-    "node-sass": "^8.0.0",
-    "nodemon": "^2.0.21"
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.77.0"
   }
 }
